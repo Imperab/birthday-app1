@@ -14,7 +14,7 @@ def calculate_days(birthday):
     days_until = (next_birthday - today).days
     
     # 计算已出生天数（如果有年份）
-    days_lived = None
+    day_lived = None
     if year:
         birth_date = date(year, month, day)
         days_lived = (today - birth_date).days

@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def get_user_birthday():
+def get_users_birthday():
     while True:
         try:
             date_str = input("请输入您的出生日期 (格式: YYYY-MM-DD 或 MM-DD): ")

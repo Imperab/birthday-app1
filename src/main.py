@@ -6,7 +6,7 @@ from src.fortune_exporter import get_fortune, export_fortune
 def main():
     print("=== 生日查询小程序 ===")
     
-    # 获取用户生日
+   
     birthday = get_user_birthday()
     
     while True:

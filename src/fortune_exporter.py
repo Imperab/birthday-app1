@@ -2,7 +2,7 @@ import random
 import json
 from datetime import datetime
 
-# 简单的运势库
+
 FORTUNES = [
     "今天是你幸运日，大胆尝试新事物吧!",
     "保持耐心，好事即将发生。",
@@ -13,8 +13,7 @@ FORTUNES = [
 ]
 
 def get_fortune(birthday):
-    # 简单随机返回一个运势
-    # 实际项目中可以考虑更复杂的逻辑或调用API
+
     return random.choice(FORTUNES)
 
 def export_fortune(fortune, birthday):
@@ -29,7 +28,7 @@ def export_fortune(fortune, birthday):
             f.write(f"出生日期: {birthday['month']}月{birthday['day']}日\n")
         f.write(f"运势内容: {fortune}\n")
     
-    # 也可以导出JSON格式
+  
     data = {
         "query_time": datetime.now().isoformat(),
         "birthday": birthday,

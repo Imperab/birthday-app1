@@ -6,14 +6,14 @@ def get_users_birthday():
             date_str = input("请输入您的出生日期 (格式: YYYY-MM-DD 或 MM-DD): ")
             
             if len(date_str.split('-')) == 2:
-                # 只有月和日
+               
                 month, day = map(int, date_str.split('-'))
                 year = None
             else:
-                # 有年、月和日
+               
                 year, month, day = map(int, date_str.split('-'))
                 
-            # 验证日期有效性
+           
             if year and (year < 1900 or year > datetime.now().year):
                 print("年份无效，请重新输入!")
                 continue
